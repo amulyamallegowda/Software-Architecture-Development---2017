@@ -1,0 +1,58 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.searchresult" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="Search Result" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <m:Panel height="auto" width="100%" headerText="Master Of Arts (M.A) Music Therapy" expandable="true" expanded="false" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:Text text="Music inspires you? To work with people, that makes you happy? You would like to expand your musical and / or psychosocial basic knowledge and make it therapeutically usable? As a music therapist, you combine artistic and therapeutic work on a scientific basis. The SRH Hochschule Heidelberg offers the only master in music therapy with state recognition in Germany, which can be studied in full-time." width="auto" maxLines="6" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:Label text="Credit Points" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="120" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Normal Period" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="2 Years" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Languages" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="German,English" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Tuition Fee" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="620 € per month" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Course details" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                    <m:Button text="Apply" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress10"/>
+                </m:content>
+            </m:Panel>
+            <m:Panel height="auto" width="100%" headerText="Master Of Science (M.Sc) Applied Computer Science" expandable="true" expanded="false" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:Text text="During the master program “Master of Science applied Computer Science” we convey the knowledge and skills on a high level. Furthermore, the degree is a requirement for the admission of a graduated program in computer science." width="auto" maxLines="6" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:Label text="Credit Points" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="120" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Normal Period" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="2 Years" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Languages" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="English" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Tuition Fee" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="670 € per month" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Course details" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                    <m:Button text="Apply" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress11"/>
+                </m:content>
+            </m:Panel>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight/>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

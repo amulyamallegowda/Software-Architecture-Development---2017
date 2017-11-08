@@ -1,0 +1,84 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.applicantdetails" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="Applicants Detail" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <m:Panel height="auto" width="100%" headerText="Applicant Details" expandable="true" expanded="false" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:Text text="" width="auto" maxLines="6" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:Label text="First Name" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="First Name" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Crime master" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Last name" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Gogo" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Mobile" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="+91 1231231231" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Address" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Mumbai" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Personal Details" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                </m:content>
+            </m:Panel>
+            <m:Panel height="auto" width="100%" headerText="College Grades" expandable="true" expanded="false" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:Text text="" width="auto" maxLines="6" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:Label text="Grads" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="2.0" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Previous university" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Thankur" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Address" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Mumabi" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Personal Details" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                </m:content>
+            </m:Panel>
+            <m:Panel height="auto" width="100%" headerText="Document" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:Text text="" width="auto" maxLines="6" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                    <core:Icon src="sap-icon://download" size="48px" height="29px" width="43px" visible="true"/>
+                    <m:UploadCollection uploadEnabled="false" numberOfAttachmentsText="" showSeparators="None" noDataText="No data" maximumFileSize="10" mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" multiple="false" uploadUrl="" sameFilenameAllowed="false" mode="SingleSelectMaster" uploadComplete="_onUploadCollectionUploadComplete2" change="_onUploadCollectionChange2" typeMissmatch="_onUploadCollectionTypeMissmatch2" fileSizeExceed="_onUploadCollectionFileSizeExceed2">
+                        <m:headerParameters/>
+                        <m:items>
+                            <m:UploadCollectionItem url="" fileName="OVPtanker.jpg" uploadedDate="2016-11-26" visibleDelete="false" visibleEdit="false" contributor="J. Doe" documentId="ovptanker" ariaLabelForPicture="" enableEdit="true" enableDelete="true" selected="false" mimeType="image/jpeg" fileSize="0"/>
+                        </m:items>
+                        <m:parameters/>
+                        <m:toolbar/>
+                    </m:UploadCollection>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:Label text="Name of the document" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Request Additional documents" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                    <m:Button text="Submit" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:content>
+            </m:Panel>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft>
+                    <m:Button text="Reject" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <m:Button text="Approve" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:contentLeft>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Sign-Out" type="Default" icon="sap-icon://log" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

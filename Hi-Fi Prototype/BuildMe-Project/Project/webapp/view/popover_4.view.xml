@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.popover_4" xmlns:m="sap.m">
+    <m:Popover bounce="true" contentHeight="350px" contentWidth="250px" horizontalScrolling="true" modal="false" offsetX="0" offsetY="0" placement="Right" showHeader="true" title="Chat" verticalScrolling="true" visible="true">
+        <m:content>
+            <m:FeedInput showIcon="true" icon="" placeholder="Hi" enabled="true" visible="true" maxLength="0" buttonTooltip=""/>
+        </m:content>
+        <m:beginButton/>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:footer/>
+        <m:subHeader/>
+    </m:Popover>
+</mvc:View>

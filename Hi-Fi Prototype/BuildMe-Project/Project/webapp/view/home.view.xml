@@ -1,0 +1,58 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.home" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="SRH Application Portal" showFooter="true" showNavButton="false">
+        <m:content>
+            <m:Image src="/webapp/resources/download__7_.jpg" height="71.00000000px" width="71.00000000px" densityAware="false"/>
+            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveLayout" editable="false" visible="true">
+                <form:content>
+                    <m:TextArea value="General Information" rows="2" cols="20" maxLength="0" wrapping="None" visible="true"/>
+                </form:content>
+                <form:title>
+                    <core:Title text="SRH Hochshule Heidelberg" level="H1" icon="sap-icon://process"/>
+                </form:title>
+            </form:SimpleForm>
+            <m:Carousel height="459px" width="1264px" loop="true" showPageIndicator="true" pageIndicatorPlacement="Top" visible="true" class="sapUiContentPadding">
+                <m:pages>
+                    <m:Image src="/webapp/resources/download__3_.jpg" height="496.64px" width="1280px" densityAware="false"/>
+                    <m:Image src="/webapp/resources/download_1_.jpg" height="496.64px" width="1280px" densityAware="false"/>
+                    <m:Image src="/webapp/resources/images__6_.jpg" height="496.64px" width="1280px" densityAware="false"/>
+                </m:pages>
+            </m:Carousel>
+            <form:Form width="1115px" visible="true">
+                <form:formContainers>
+                    <form:FormContainer visible="true">
+                        <form:formElements/>
+                    </form:FormContainer>
+                </form:formContainers>
+                <form:layout>
+                    <form:ResponsiveGridLayout columnsM="1" columnsL="2" emptySpanL="0" emptySpanM="0" emptySpanS="0" visible="true" labelSpanS="12" labelSpanM="2" labelSpanL="4"/>
+                </form:layout>
+                <form:title>
+                    <core:Title text="About SRH" level="Auto"/>
+                </form:title>
+            </form:Form>
+            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="true" visible="true">
+                <form:content>
+                    <m:Link href="" text="Bachelor Program" textAlign="Begin" width="auto" target="_blank" wrapping="true" enabled="true" visible="true" emphasized="true" subtle="true" press="_onLinkPress"/>
+                    <m:Link href="" text="Master Program" textAlign="Begin" width="auto" target="_blank" wrapping="true" enabled="true" visible="true" emphasized="true" subtle="true" press="_onLinkPress1"/>
+                </form:content>
+                <form:title>
+                    <core:Title text="Search For Your Next Career Step" level="Auto" icon="sap-icon://open-command-field"/>
+                </form:title>
+            </form:SimpleForm>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Footer">
+                <m:contentLeft>
+                    <m:Button text="Chat" type="Default" icon="sap-icon://notification-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                </m:contentLeft>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Sign-In" type="Accept" icon="sap-icon://account" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

@@ -1,0 +1,36 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.successfulapplication" xmlns:m="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <m:Page showHeader="true" title="Application Status" showFooter="true" showNavButton="false" enableScrolling="false">
+        <m:content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="270px" top="197px">
+                        <layout:control>
+                            <m:Title text="Thank You For Applying" titleStyle="H1" width="777px" textAlign="Center" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="563px" top="367px">
+                        <layout:control>
+                            <m:ObjectIdentifier title="Application Tracking" text="" titleActive="true" visible="true" titlePress="_onObjectIdentifierTitlePress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="606px" top="277px">
+                        <layout:control>
+                            <m:Image src="/webapp/resources/download__3_.png" height="83.00000000px" width="82.92226054px" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Sign-Out" type="Transparent" icon="sap-icon://log" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress6"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

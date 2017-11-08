@@ -1,0 +1,446 @@
+{
+    "_version": "1.1.0",
+    "start_url": "webapp/index.html",
+    "sap.app": {
+        "_version": "1.2.0",
+        "id": "generate.app",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "dataSources": {
+            "main": {
+                "uri": "/here/goes/your/serviceUrl/",
+                "type": "OData",
+                "settings": {
+                    "defaultUpdateMethod": "PUT",
+                    "odataVersion": "2.0",
+                    "localUri": "localService/metadata.xml"
+                }
+            }
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "ach": "ach",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.32.0"
+        }
+    },
+    "sap.ui": {
+        "_version": "1.2.0",
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "_version": "1.1.0",
+        "rootView": {
+            "viewName": "generated.app.viewhome",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.32.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "": {
+                "dataSource": "main",
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "loadMetadataAsync": false,
+                    "json": true,
+                    "bJSON": true,
+                    "defaultBindingMode": "TwoWay",
+                    "useBatch": true,
+                    "refreshAfterChange": false,
+                    "disableHeadRequestForToken": true
+                }
+            }
+        },
+        "resources": {
+            "css": []
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "generated.app.view",
+                "controlId": "App",
+                "clearTarget": false,
+                "controlAggregation": "pages",
+                "bypassedPage": {
+                    "target": [
+                        "home"
+                    ]
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "home/:context:",
+                    "name": "home",
+                    "target": [
+                        "home"
+                    ]
+                },
+                {
+                    "pattern": "",
+                    "name": "default",
+                    "target": [
+                        "home"
+                    ]
+                },
+                {
+                    "pattern": "search/:context:",
+                    "name": "search",
+                    "target": [
+                        "search"
+                    ]
+                },
+                {
+                    "pattern": "signupinfo/:context:",
+                    "name": "signupinfo",
+                    "target": [
+                        "signupinfo"
+                    ]
+                },
+                {
+                    "pattern": "prerequistics_previousapplications/:context:",
+                    "name": "prerequistics_previousapplications",
+                    "target": [
+                        "prerequistics_previousapplications"
+                    ]
+                },
+                {
+                    "pattern": "successfulapplication/:context:",
+                    "name": "successfulapplication",
+                    "target": [
+                        "successfulapplication"
+                    ]
+                },
+                {
+                    "pattern": "adminwelcome/:context:",
+                    "name": "adminwelcome",
+                    "target": [
+                        "adminwelcome"
+                    ]
+                },
+                {
+                    "pattern": "applicantdetails/:context:",
+                    "name": "applicantdetails",
+                    "target": [
+                        "applicantdetails"
+                    ]
+                },
+                {
+                    "pattern": "popover_1/:context:",
+                    "name": "popover_1",
+                    "target": [
+                        "popover_1"
+                    ]
+                },
+                {
+                    "pattern": "login/:context:",
+                    "name": "login",
+                    "target": [
+                        "login"
+                    ]
+                },
+                {
+                    "pattern": "status/:context:",
+                    "name": "status",
+                    "target": [
+                        "status"
+                    ]
+                },
+                {
+                    "pattern": "searchresult/:context:",
+                    "name": "searchresult",
+                    "target": [
+                        "searchresult"
+                    ]
+                },
+                {
+                    "pattern": "searchresult2_1/:context:",
+                    "name": "searchresult2_1",
+                    "target": [
+                        "searchresult2_1"
+                    ]
+                },
+                {
+                    "pattern": "past_application/:context:",
+                    "name": "past_application",
+                    "target": [
+                        "past_application"
+                    ]
+                },
+                {
+                    "pattern": "popover_2/:context:",
+                    "name": "popover_2",
+                    "target": [
+                        "popover_2"
+                    ]
+                },
+                {
+                    "pattern": "popover_3/:context:",
+                    "name": "popover_3",
+                    "target": [
+                        "popover_3"
+                    ]
+                },
+                {
+                    "pattern": "popover_4/:context:",
+                    "name": "popover_4",
+                    "target": [
+                        "popover_4"
+                    ]
+                },
+                {
+                    "pattern": "search2/:context:",
+                    "name": "search2",
+                    "target": [
+                        "search2"
+                    ]
+                },
+                {
+                    "pattern": "dialog_1/:context:",
+                    "name": "dialog_1",
+                    "target": [
+                        "dialog_1"
+                    ]
+                },
+                {
+                    "pattern": "home/:context:",
+                    "name": "home",
+                    "target": [
+                        "home"
+                    ]
+                },
+                {
+                    "pattern": "search/:context:",
+                    "name": "search",
+                    "target": [
+                        "search"
+                    ]
+                },
+                {
+                    "pattern": "signupinfo/:context:",
+                    "name": "signupinfo",
+                    "target": [
+                        "signupinfo"
+                    ]
+                },
+                {
+                    "pattern": "prerequistics_previousapplications/:context:",
+                    "name": "prerequistics_previousapplications",
+                    "target": [
+                        "prerequistics_previousapplications"
+                    ]
+                },
+                {
+                    "pattern": "successfulapplication/:context:",
+                    "name": "successfulapplication",
+                    "target": [
+                        "successfulapplication"
+                    ]
+                },
+                {
+                    "pattern": "adminwelcome/:context:",
+                    "name": "adminwelcome",
+                    "target": [
+                        "adminwelcome"
+                    ]
+                },
+                {
+                    "pattern": "applicantdetails/:context:",
+                    "name": "applicantdetails",
+                    "target": [
+                        "applicantdetails"
+                    ]
+                },
+                {
+                    "pattern": "popover_1/:context:",
+                    "name": "popover_1",
+                    "target": [
+                        "popover_1"
+                    ]
+                },
+                {
+                    "pattern": "login/:context:",
+                    "name": "login",
+                    "target": [
+                        "login"
+                    ]
+                },
+                {
+                    "pattern": "status/:context:",
+                    "name": "status",
+                    "target": [
+                        "status"
+                    ]
+                },
+                {
+                    "pattern": "searchresult/:context:",
+                    "name": "searchresult",
+                    "target": [
+                        "searchresult"
+                    ]
+                },
+                {
+                    "pattern": "searchresult2_1/:context:",
+                    "name": "searchresult2_1",
+                    "target": [
+                        "searchresult2_1"
+                    ]
+                },
+                {
+                    "pattern": "past_application/:context:",
+                    "name": "past_application",
+                    "target": [
+                        "past_application"
+                    ]
+                },
+                {
+                    "pattern": "popover_2/:context:",
+                    "name": "popover_2",
+                    "target": [
+                        "popover_2"
+                    ]
+                },
+                {
+                    "pattern": "popover_3/:context:",
+                    "name": "popover_3",
+                    "target": [
+                        "popover_3"
+                    ]
+                },
+                {
+                    "pattern": "popover_4/:context:",
+                    "name": "popover_4",
+                    "target": [
+                        "popover_4"
+                    ]
+                },
+                {
+                    "pattern": "search2/:context:",
+                    "name": "search2",
+                    "target": [
+                        "search2"
+                    ]
+                },
+                {
+                    "pattern": "dialog_1/:context:",
+                    "name": "dialog_1",
+                    "target": [
+                        "dialog_1"
+                    ]
+                }
+            ],
+            "targets": {
+                "home": {
+                    "controlAggregation": "pages",
+                    "viewName": "home",
+                    "viewId": "home",
+                    "viewLevel": 1
+                },
+                "search": {
+                    "controlAggregation": "pages",
+                    "viewName": "search",
+                    "viewId": "search",
+                    "viewLevel": 1
+                },
+                "signupinfo": {
+                    "controlAggregation": "pages",
+                    "viewName": "signupinfo",
+                    "viewId": "signupinfo",
+                    "viewLevel": 1
+                },
+                "prerequistics_previousapplications": {
+                    "controlAggregation": "pages",
+                    "viewName": "prerequistics_previousapplications",
+                    "viewId": "prerequistics_previousapplications",
+                    "viewLevel": 1
+                },
+                "successfulapplication": {
+                    "controlAggregation": "pages",
+                    "viewName": "successfulapplication",
+                    "viewId": "successfulapplication",
+                    "viewLevel": 1
+                },
+                "adminwelcome": {
+                    "controlAggregation": "pages",
+                    "viewName": "adminwelcome",
+                    "viewId": "adminwelcome",
+                    "viewLevel": 1
+                },
+                "applicantdetails": {
+                    "controlAggregation": "pages",
+                    "viewName": "applicantdetails",
+                    "viewId": "applicantdetails",
+                    "viewLevel": 1
+                },
+                "login": {
+                    "controlAggregation": "pages",
+                    "viewName": "login",
+                    "viewId": "login",
+                    "viewLevel": 1
+                },
+                "status": {
+                    "controlAggregation": "pages",
+                    "viewName": "status",
+                    "viewId": "status",
+                    "viewLevel": 1
+                },
+                "searchresult": {
+                    "controlAggregation": "pages",
+                    "viewName": "searchresult",
+                    "viewId": "searchresult",
+                    "viewLevel": 1
+                },
+                "searchresult2_1": {
+                    "controlAggregation": "pages",
+                    "viewName": "searchresult2_1",
+                    "viewId": "searchresult2_1",
+                    "viewLevel": 1
+                },
+                "past_application": {
+                    "controlAggregation": "pages",
+                    "viewName": "past_application",
+                    "viewId": "past_application",
+                    "viewLevel": 1
+                },
+                "search2": {
+                    "controlAggregation": "pages",
+                    "viewName": "search2",
+                    "viewId": "search2",
+                    "viewLevel": 1
+                }
+            }
+        }
+    }
+}

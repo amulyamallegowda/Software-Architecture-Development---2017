@@ -1,0 +1,78 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.past_application" xmlns:m="sap.m">
+    <m:Page showHeader="true" title="Past Applications" showFooter="true" showNavButton="false">
+        <m:content>
+            <m:Table width="100%" noDataText="No data" mode="None" showSeparators="All" growing="false" growingThreshold="20" growingScrollToLoad="false" itemPress="_onTableItemPress1">
+                <m:infoToolbar>
+                    <m:Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <m:content>
+                            <m:Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:content>
+                    </m:Toolbar>
+                </m:infoToolbar>
+                <m:headerToolbar/>
+                <m:columns>
+                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <m:header>
+                            <m:Text text="Sr.no" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:header>
+                        <m:footer/>
+                    </m:Column>
+                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <m:header>
+                            <m:Text text="Applied to" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:header>
+                        <m:footer/>
+                    </m:Column>
+                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <m:header>
+                            <m:Text text="Applied date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:header>
+                        <m:footer/>
+                    </m:Column>
+                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <m:header>
+                            <m:Text text="Status" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:header>
+                        <m:footer/>
+                    </m:Column>
+                </m:columns>
+                <m:items>
+                    <m:ColumnListItem type="Active">
+                        <m:cells>
+                            <m:Text text="1" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Music" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="08.05.2017" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="In-Process" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:cells>
+                    </m:ColumnListItem>
+                    <m:ColumnListItem type="Active">
+                        <m:cells>
+                            <m:Text text="2" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Infomatics" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="08.05.2017" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="In-Process" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:cells>
+                    </m:ColumnListItem>
+                    <m:ColumnListItem type="Active">
+                        <m:cells>
+                            <m:Text text="3" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Infomatics" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="08.05.2016" width="70.07501220703125px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="Rejected" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:cells>
+                    </m:ColumnListItem>
+                </m:items>
+            </m:Table>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight/>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

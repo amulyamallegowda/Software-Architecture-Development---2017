@@ -1,0 +1,94 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.search2" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <m:Page showHeader="true" title="Find the right path" showFooter="true" showNavButton="false" enableScrolling="false">
+        <m:content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="1108px" top="707.01171875px">
+                        <layout:control>
+                            <m:Button text="Look for Couses" type="Accept" icon="sap-icon://show" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress14"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="1170px" top="333px">
+                        <layout:control>
+                            <m:Button text="Search" type="Accept" icon="sap-icon://search" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress15"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="1118px" top="0px">
+                        <layout:control>
+                            <m:Button text="Previous Applications" type="Transparent" iconFirst="false" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress16"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="10px" top="394.01171875px">
+                        <layout:control>
+                            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="GridLayout" editable="false" visible="true">
+                                <form:content/>
+                                <form:title>
+                                    <core:Title text="" level="Auto"/>
+                                </form:title>
+                            </form:SimpleForm>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="151px" top="51px">
+                        <layout:control>
+                            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveLayout" editable="true" visible="true">
+                                <form:content>
+                                    <m:CheckBox text="Engineering Science" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                    <m:CheckBox text="Buisiness Management" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                    <m:CheckBox text="Architecture" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                    <m:CheckBox text="Music" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                </form:content>
+                                <form:title>
+                                    <core:Title text="Passion/Interest" level="Auto"/>
+                                </form:title>
+                            </form:SimpleForm>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="8px" top="506px">
+                        <layout:control>
+                            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="GridLayout" editable="true" visible="true">
+                                <form:content>
+                                    <m:Label text="I would like to specialize in" design="Bold" width="100%" required="false" textAlign="Right" textDirection="Inherit"/>
+                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                    <m:Label text="To become a" design="Bold" width="100%" required="false" textAlign="Right" textDirection="Inherit"/>
+                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                </form:content>
+                                <form:title>
+                                    <core:Title text="SRH Study Assistant" level="H3" icon="sap-icon://idea-wall"/>
+                                </form:title>
+                            </form:SimpleForm>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="498px" top="51px">
+                        <layout:control>
+                            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                                <form:content>
+                                    <m:CheckBox text="English" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                    <m:CheckBox text="Deutsch" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                </form:content>
+                                <form:title>
+                                    <core:Title text="Language Preference" level="Auto"/>
+                                </form:title>
+                            </form:SimpleForm>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="903px" top="55px">
+                        <layout:control>
+                            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                                <form:content>
+                                    <m:CheckBox text="Summer" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                    <m:CheckBox text="Winter" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+                                </form:content>
+                                <form:title>
+                                    <core:Title text="Semister Preference" level="Auto"/>
+                                </form:title>
+                            </form:SimpleForm>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </m:content>
+        <m:footer/>
+        <m:headerContent/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

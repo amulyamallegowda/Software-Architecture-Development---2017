@@ -1,0 +1,58 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.searchresult2_1" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="Search result" showFooter="true" showNavButton="false">
+        <m:content>
+            <m:Panel height="auto" width="100%" headerText="Bachelors Of Arts (B.A) Cross Media Design" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:Text text="Sie möchten mit Ihren Ideen Menschen erreichen, quer durch alle Medien? Interdisziplinär aufgebaut, bietet Ihnen dieser Studiengang die Basis, um kreative Konzepte zu entwickeln und unterschiedlichste Medien und Formate professionell zu bespielen. In einem Medienunternehmen, selbstständig oder als Spezialist.  Im Fokus steht das Identifizieren und Gestalten von Inhalten. Dazu vermitteln wir u.a. Grundlagen in Grafikdesign, Fotografie, Film und Animation sowie in journalistischem und kreativem Schreiben. Sie lernen, wie alte und neue Medien im Detail funktionieren und welche Optionen sie heute und in Zukunft bieten, um Botschaften oder Kampagnen zu platzieren." width="auto" maxLines="6" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:Label text="Credit Points" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="180" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Normal Period" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="3 Years" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Languages" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="German" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Tuition Fee" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="620 € per month" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Course details" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                    <m:Button text="Apply" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress12"/>
+                </m:content>
+            </m:Panel>
+            <m:Panel height="auto" width="100%" headerText="Bachelor Of Science (B.Sc) Applied Computer Science" expandable="true" expanded="false" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:Text text="Die Umsätze der Games-Branche steigen jährlich – ein Ende ist nicht abzusehen. Computerspiele haben die Film- und Musikindustrie längst überholt und sind zur dominierenden Entertainment-Sparte avanciert. Entwickler werden gesucht." width="auto" maxLines="6" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:Label text="Credit Points" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="180" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Normal Period" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="3 Years" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Languages" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="German" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Label text="Tuition Fee" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                            <m:Text text="620 € per month" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Course details" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                    <m:Button text="Apply" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress13"/>
+                </m:content>
+            </m:Panel>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight/>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

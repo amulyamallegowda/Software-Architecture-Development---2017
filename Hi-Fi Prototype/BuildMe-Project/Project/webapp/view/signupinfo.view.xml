@@ -1,0 +1,95 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.signupinfo" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <m:Page showHeader="true" title="Candidate Profile" showFooter="true" showNavButton="false" enableScrolling="false">
+        <m:content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="206px" top="198px">
+                        <layout:control>
+                            <m:IconTabBar expandable="true" expanded="true" applyContentPadding="false" backgroundDesign="Solid" upperCase="false" visible="true" selectedKey="Ok">
+                                <m:items>
+                                    <m:IconTabFilter icon="sap-icon://hint" iconColor="Positive" text="Info" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                                        <m:content>
+                                            <form:Form width="880px" visible="true">
+                                                <form:formContainers>
+                                                    <form:FormContainer visible="true">
+                                                        <form:formElements>
+                                                            <form:FormElement visible="true">
+                                                                <form:fields>
+                                                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                                                </form:fields>
+                                                                <form:label>
+                                                                    <m:Label text="Name" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                                </form:label>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:fields>
+                                                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                                                </form:fields>
+                                                                <form:label>
+                                                                    <m:Label text="Education Details" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                                </form:label>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:fields>
+                                                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                                                </form:fields>
+                                                                <form:label>
+                                                                    <m:Label text="Language Skill" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                                </form:label>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:fields>
+                                                                    <m:DatePicker enabled="true" visible="true" width="auto" displayFormat="MMM dd, yyyy"/>
+                                                                </form:fields>
+                                                                <form:label>
+                                                                    <m:Label text="Date of Birth" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                                </form:label>
+                                                            </form:FormElement>
+                                                        </form:formElements>
+                                                    </form:FormContainer>
+                                                </form:formContainers>
+                                                <form:layout>
+                                                    <form:ResponsiveGridLayout columnsM="1" columnsL="2" emptySpanL="0" emptySpanM="0" emptySpanS="0" visible="true" labelSpanS="12" labelSpanM="2" labelSpanL="4"/>
+                                                </form:layout>
+                                                <form:title>
+                                                    <core:Title text="Profile    Info" level="Auto"/>
+                                                </form:title>
+                                            </form:Form>
+                                        </m:content>
+                                    </m:IconTabFilter>
+                                    <m:IconTabSeparator icon="" iconDensityAware="false"/>
+                                    <m:IconTabFilter icon="sap-icon://attachment" iconColor="Neutral" text="" count="3" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                                        <m:content>
+                                            <m:Text text="Attachments go here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <m:UploadCollection uploadEnabled="true" numberOfAttachmentsText="Upload Documents" showSeparators="All" noDataText="No data" maximumFileSize="10" mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" multiple="false" uploadUrl="" sameFilenameAllowed="false" mode="SingleSelectMaster" uploadComplete="_onUploadCollectionUploadComplete" change="_onUploadCollectionChange" typeMissmatch="_onUploadCollectionTypeMissmatch" fileSizeExceed="_onUploadCollectionFileSizeExceed">
+                                                <m:headerParameters/>
+                                                <m:items>
+                                                    <m:UploadCollectionItem url="" fileName="OVPtanker.jpg" uploadedDate="2016-11-26" visibleDelete="false" visibleEdit="false" contributor="J. Doe" documentId="ovptanker" ariaLabelForPicture="" enableEdit="true" enableDelete="true" selected="false" mimeType="image/jpeg" fileSize="0"/>
+                                                </m:items>
+                                                <m:parameters/>
+                                                <m:toolbar/>
+                                            </m:UploadCollection>
+                                        </m:content>
+                                    </m:IconTabFilter>
+                                    <m:IconTabSeparator icon="" iconDensityAware="false"/>
+                                </m:items>
+                                <m:content/>
+                            </m:IconTabBar>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Pre-Requistics" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress5"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

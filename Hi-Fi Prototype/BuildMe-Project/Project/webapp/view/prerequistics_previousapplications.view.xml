@@ -1,0 +1,72 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.prerequistics_previousapplications" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <m:Page showHeader="true" title="Pre-Reequisite" showFooter="true" showNavButton="false" enableScrolling="false">
+        <m:content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="31px" top="53px">
+                        <layout:control>
+                            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="GridLayout" editable="true" visible="true">
+                                <form:content>
+                                    <m:Label text="IELTS" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Text text="Score 7" width="auto" maxLines="1" wrapping="true" textAlign="Center" textDirection="Inherit"/>
+                                    <m:Label text="German Language" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Text text="A1" width="auto" maxLines="1" wrapping="true" textAlign="Center" textDirection="Inherit"/>
+                                    <m:Label text="Min Credit Points" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Text text="120" width="auto" maxLines="1" wrapping="true" textAlign="Center" textDirection="Inherit"/>
+                                    <m:Label text="Mandatory Documents Attached" design="Bold" width="375.1875px" required="true" textAlign="Right" textDirection="Inherit"/>
+                                    <m:Text text="Text" width="991px" maxLines="1" wrapping="true" textAlign="Center" textDirection="Inherit"/>
+                                </form:content>
+                                <form:title>
+                                    <core:Title text="Pre Requistics Check" level="Auto"/>
+                                </form:title>
+                            </form:SimpleForm>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="853px" top="125px">
+                        <layout:control>
+                            <m:Image src="/webapp/resources/ok.png" height="27px" width="26.96875px" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="854px" top="175px">
+                        <layout:control>
+                            <m:Image src="/webapp/resources/ok.png" height="27px" width="26.96875px" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="851px" top="225px">
+                        <layout:control>
+                            <m:Image src="/webapp/resources/ok.png" height="27px" width="26.96875px" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="853px" top="272px">
+                        <layout:control>
+                            <m:Image src="/webapp/resources/ok.png" height="27px" width="26.96875px" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="35px" top="330px">
+                        <layout:control>
+                            <m:UploadCollection uploadEnabled="true" numberOfAttachmentsText="Upload" showSeparators="All" noDataText="No data" maximumFileSize="10" mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" multiple="false" uploadUrl="" sameFilenameAllowed="false" mode="SingleSelectMaster" uploadComplete="_onUploadCollectionUploadComplete1" change="_onUploadCollectionChange1" typeMissmatch="_onUploadCollectionTypeMissmatch1" fileSizeExceed="_onUploadCollectionFileSizeExceed1">
+                                <m:headerParameters/>
+                                <m:items>
+                                    <m:UploadCollectionItem url="" fileName="OVPtanker.jpg" uploadedDate="2016-11-26" visibleDelete="false" visibleEdit="false" contributor="J. Doe" documentId="ovptanker" ariaLabelForPicture="" enableEdit="true" enableDelete="true" selected="false" mimeType="image/jpeg" fileSize="0"/>
+                                </m:items>
+                                <m:parameters/>
+                                <m:toolbar/>
+                            </m:UploadCollection>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Apply" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress5"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

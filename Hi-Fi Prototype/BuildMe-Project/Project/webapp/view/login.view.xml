@@ -1,0 +1,53 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.login" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <m:Page showHeader="false" title="Login" showFooter="false" showNavButton="false" enableScrolling="false">
+        <m:content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="299px" top="156px">
+                        <layout:control>
+                            <m:Image src="/webapp/resources/download__7_.jpg" height="61px" width="60.921875px" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="350px" top="170px">
+                        <layout:control>
+                            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="true" visible="true">
+                                <form:content>
+                                    <m:Label text="User Name" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="200px" valueHelpOnly="false" maxLength="0"/>
+                                    <m:Label text="Password" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="200px" valueHelpOnly="false" maxLength="0"/>
+                                </form:content>
+                                <form:title>
+                                    <core:Title text="Login" level="H1" icon="sap-icon://customer"/>
+                                </form:title>
+                            </form:SimpleForm>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="476px" top="393px">
+                        <layout:control>
+                            <m:Button text="Sign-up" type="Accept" icon="sap-icon://account" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress7"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="369px" top="394px">
+                        <layout:control>
+                            <m:Button text="Sign-in" type="Accept" icon="sap-icon://account" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress8"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Approve" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <m:Button text="Reject" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <m:Button text="" type="Default" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

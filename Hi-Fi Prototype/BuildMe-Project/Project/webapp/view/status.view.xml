@@ -1,0 +1,40 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.status" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="Status" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="true" visible="true">
+                <form:content>
+                    <m:Label text="Applied to" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                    <m:Text text="Infomatics" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                    <m:Label text="Applied Date" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                    <m:Text text="08.05.2016" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                    <m:Label text="Last Status Changed" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                    <m:Text text="12.05.2016" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                </form:content>
+                <form:title>
+                    <core:Title text="Details" level="Auto"/>
+                </form:title>
+            </form:SimpleForm>
+            <m:ProgressIndicator width="auto" height="20px" percentValue="100" showValue="true" displayValue="Rejected" state="Error" enabled="true" visible="true"/>
+            <m:UploadCollection uploadEnabled="true" numberOfAttachmentsText="" showSeparators="All" noDataText="No data" maximumFileSize="10" mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" multiple="false" uploadUrl="" sameFilenameAllowed="false" mode="SingleSelectMaster" uploadComplete="_onUploadCollectionUploadComplete3" change="_onUploadCollectionChange3" typeMissmatch="_onUploadCollectionTypeMissmatch3" fileSizeExceed="_onUploadCollectionFileSizeExceed3">
+                <m:headerParameters/>
+                <m:items>
+                    <m:UploadCollectionItem url="" fileName="OVPtanker.jpg" uploadedDate="2016-11-26" visibleDelete="false" visibleEdit="false" contributor="J. Doe" documentId="ovptanker" ariaLabelForPicture="" enableEdit="true" enableDelete="true" selected="false" mimeType="image/jpeg" fileSize="0"/>
+                </m:items>
+                <m:parameters/>
+                <m:toolbar/>
+            </m:UploadCollection>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Sign-Out" type="Transparent" icon="sap-icon://log" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress9"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.popover_1" xmlns:m="sap.m">
+    <m:Popover bounce="false" contentHeight="350px" contentWidth="250px" horizontalScrolling="true" modal="true" offsetX="0" offsetY="0" placement="Bottom" showHeader="true" title="Status" verticalScrolling="true" visible="true">
+        <m:content>
+            <m:Image src="/webapp/resources/download__4_.png" height="35px" width="35.15625px" densityAware="false"/>
+            <m:Label text="Applied" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+            <m:ProgressIndicator width="100%" percentValue="15" showValue="true" displayValue="" state="None" enabled="true" visible="true"/>
+        </m:content>
+        <m:beginButton/>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:footer/>
+        <m:subHeader/>
+    </m:Popover>
+</mvc:View>
